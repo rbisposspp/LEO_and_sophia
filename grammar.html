@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo & Sofia: Grammar Practice</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self';">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grammar.css">
+    <link rel="stylesheet" href="css/high-contrast.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="site-title">Leo & Sofia</a>
+            <nav class="main-nav">
+                <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="primaryNav" class="nav-links">
+                    <li><a href="index.html">Home (Vocabulary)</a></li>
+                    <li><a href="story.html">The Story</a></li>
+                    <li><a href="grammar.html" class="active">Grammar Practice</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="spark-intro grammar-intro" aria-labelledby="grammarTitle">
+            <p class="eyebrow">Ignite Challenge</p>
+            <h2 id="grammarTitle">Practice Your Grammar: Questions with 'to be'</h2>
+            <p class="instructions">Build each question, answer it, and track your accuracy as you go.</p>
+            <div class="lab-stats" aria-live="polite">
+                <span class="stat-pill">Checked: <strong id="grammarCheckedCount">0</strong></span>
+                <span class="stat-pill">Correct: <strong id="grammarCorrectCount">0</strong></span>
+                <span class="stat-pill">Streak: <strong id="grammarStreakCount">0</strong></span>
+                <span class="stat-pill">Lab points: <strong data-progress-points>0</strong></span>
+            </div>
+            <div class="synonym-hints" aria-label="Useful synonyms for your answers">
+                <span class="hint-chip">friendly = kind</span>
+                <span class="hint-chip">pleasant = nice</span>
+                <span class="hint-chip">good-looking = handsome</span>
+            </div>
+            <button type="button" id="resetGrammarProgress" class="accent-btn secondary-btn">Reset Grammar Score</button>
+        </section>
+
+        <section id="unscramble-section">
+            <h3>Part 1: About Leo & Sofia - Unscramble the Sentences</h3>
+            <p class="instructions">Drag the words to build each question. Then, type your answer based on the story.</p>
+
+            <div class="exercise-item">
+                <p class="jumbled-words">Leo young is picture in the first</p>
+                <label for="unscramble-q-0">Your built question (drag words):</label>
+                <input type="text" id="unscramble-q-0" aria-label="Unscrambled question 1">
+                <label for="unscramble-a-0">Your answer to the question:</label>
+                <input type="text" id="unscramble-a-0" aria-label="Answer to question 1">
+                <button class="check-btn" data-type="unscramble" data-index="0">Check</button>
+                <p class="feedback-area" id="feedback-unscramble-0" aria-live="polite"></p>
+            </div>
+            <div class="exercise-item">
+                <p class="jumbled-words">Sofia shy adolescent an as is</p>
+                <label for="unscramble-q-1">Your built question (drag words):</label>
+                <input type="text" id="unscramble-q-1" aria-label="Unscrambled question 2">
+                <label for="unscramble-a-1">Your answer to the question:</label>
+                <input type="text" id="unscramble-a-1" aria-label="Answer to question 2">
+                <button class="check-btn" data-type="unscramble" data-index="1">Check</button>
+                <p class="feedback-area" id="feedback-unscramble-1" aria-live="polite"></p>
+            </div>
+            <div class="exercise-item">
+                <p class="jumbled-words">Leo's personality like what is he meets Sofia when</p>
+                <label for="unscramble-q-2">Your built question (drag words):</label>
+                <input type="text" id="unscramble-q-2" aria-label="Unscrambled question 3">
+                <label for="unscramble-a-2">Your answer to the question:</label>
+                <input type="text" id="unscramble-a-2" aria-label="Answer to question 3">
+                <button class="check-btn" data-type="unscramble" data-index="2">Check</button>
+                <p class="feedback-area" id="feedback-unscramble-2" aria-live="polite"></p>
+            </div>
+            <div class="exercise-item">
+                <p class="jumbled-words">Sofia's trait main what is project the during science</p>
+                <label for="unscramble-q-3">Your built question (drag words):</label>
+                <input type="text" id="unscramble-q-3" aria-label="Unscrambled question 4">
+                <label for="unscramble-a-3">Your answer to the question:</label>
+                <input type="text" id="unscramble-a-3" aria-label="Answer to question 4">
+                <button class="check-btn" data-type="unscramble" data-index="3">Check</button>
+                <p class="feedback-area" id="feedback-unscramble-3" aria-live="polite"></p>
+            </div>
+            <div class="exercise-item">
+                <p class="jumbled-words">Leo handsome is man a as older when</p>
+                <label for="unscramble-q-4">Your built question (drag words):</label>
+                <input type="text" id="unscramble-q-4" aria-label="Unscrambled question 5">
+                <label for="unscramble-a-4">Your answer to the question:</label>
+                <input type="text" id="unscramble-a-4" aria-label="Answer to question 5">
+                <button class="check-btn" data-type="unscramble" data-index="4">Check</button>
+                <p class="feedback-area" id="feedback-unscramble-4" aria-live="polite"></p>
+            </div>
+            <div class="exercise-item">
+                <p class="jumbled-words">talkative Sofia adult an as is</p>
+                <label for="unscramble-q-5">Your built question (drag words):</label>
+                <input type="text" id="unscramble-q-5" aria-label="Unscrambled question 6">
+                <label for="unscramble-a-5">Your answer to the question:</label>
+                <input type="text" id="unscramble-a-5" aria-label="Answer to question 6">
+                <button class="check-btn" data-type="unscramble" data-index="5">Check</button>
+                <p class="feedback-area" id="feedback-unscramble-5" aria-live="polite"></p>
+            </div>
+            <div class="exercise-item">
+                <p class="jumbled-words">Leo and Sofia happy are end the in story of the</p>
+                <label for="unscramble-q-6">Your built question (drag words):</label>
+                <input type="text" id="unscramble-q-6" aria-label="Unscrambled question 7">
+                <label for="unscramble-a-6">Your answer to the question:</label>
+                <input type="text" id="unscramble-a-6" aria-label="Answer to question 7">
+                <button class="check-btn" data-type="unscramble" data-index="6">Check</button>
+                <p class="feedback-area" id="feedback-unscramble-6" aria-live="polite"></p>
+            </div>
+            <div class="exercise-item">
+                <p class="jumbled-words">dog their cute is</p>
+                <label for="unscramble-q-7">Your built question (drag words):</label>
+                <input type="text" id="unscramble-q-7" aria-label="Unscrambled question 8">
+                <label for="unscramble-a-7">Your answer to the question:</label>
+                <input type="text" id="unscramble-a-7" aria-label="Answer to question 8">
+                <button class="check-btn" data-type="unscramble" data-index="7">Check</button>
+                <p class="feedback-area" id="feedback-unscramble-7" aria-live="polite"></p>
+            </div>
+            <div class="exercise-item">
+                <p class="jumbled-words">what Sofia like is she helps Leo when study</p>
+                <label for="unscramble-q-8">Your built question (drag words):</label>
+                <input type="text" id="unscramble-q-8" aria-label="Unscrambled question 9">
+                <label for="unscramble-a-8">Your answer to the question:</label>
+                <input type="text" id="unscramble-a-8" aria-label="Answer to question 9">
+                <button class="check-btn" data-type="unscramble" data-index="8">Check</button>
+                <p class="feedback-area" id="feedback-unscramble-8" aria-live="polite"></p>
+            </div>
+            <div class="exercise-item">
+                <p class="jumbled-words">unfriendly Sofia is argument the after moment for a</p>
+                <label for="unscramble-q-9">Your built question (drag words):</label>
+                <input type="text" id="unscramble-q-9" aria-label="Unscrambled question 10">
+                <label for="unscramble-a-9">Your answer to the question:</label>
+                <input type="text" id="unscramble-a-9" aria-label="Answer to question 10">
+                <button class="check-btn" data-type="unscramble" data-index="9">Check</button>
+                <p class="feedback-area" id="feedback-unscramble-9" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section id="quiz-section">
+            <h3>Part 2: How Much Do You Remember? - Leo & Sofia Quiz</h3>
+            <p class="instructions">Read the questions about Leo and Sofia. Type your answer.</p>
+
+            <div class="quiz-item">
+                <p class="quiz-question">1. Is Leo friendly in Scene 1?</p>
+                <label for="quiz-a-0">Your answer:</label>
+                <input type="text" id="quiz-a-0" aria-label="Answer to quiz question 1">
+                <button class="check-btn" data-type="quiz" data-index="0">Check</button>
+                <p class="feedback-area" id="feedback-quiz-0" aria-live="polite"></p>
+            </div>
+            <div class="quiz-item">
+                <p class="quiz-question">2. Is Sofia serious about the school project in Scene 2?</p>
+                <label for="quiz-a-1">Your answer:</label>
+                <input type="text" id="quiz-a-1" aria-label="Answer to quiz question 2">
+                <button class="check-btn" data-type="quiz" data-index="1">Check</button>
+                <p class="feedback-area" id="feedback-quiz-1" aria-live="polite"></p>
+            </div>
+            <div class="quiz-item">
+                <p class="quiz-question">3. What is Sofia like when she helps Leo study for the test in Scene 3?</p>
+                <label for="quiz-a-2">Your answer:</label>
+                <input type="text" id="quiz-a-2" aria-label="Answer to quiz question 3">
+                <button class="check-btn" data-type="quiz" data-index="2">Check</button>
+                <p class="feedback-area" id="feedback-quiz-2" aria-live="polite"></p>
+            </div>
+            <div class="quiz-item">
+                <p class="quiz-question">4. Is Sofia unfriendly during the argument in Scene 4?</p>
+                <label for="quiz-a-3">Your answer:</label>
+                <input type="text" id="quiz-a-3" aria-label="Answer to quiz question 4">
+                <button class="check-btn" data-type="quiz" data-index="3">Check</button>
+                <p class="feedback-area" id="feedback-quiz-3" aria-live="polite"></p>
+            </div>
+            <div class="quiz-item">
+                <p class="quiz-question">5. Where are Leo and Sofia in Scene 6? Is the place interesting?</p>
+                <label for="quiz-a-4">Your answer:</label>
+                <input type="text" id="quiz-a-4" aria-label="Answer to quiz question 5" placeholder="Answer both parts of the question.">
+                <button class="check-btn" data-type="quiz" data-index="4">Check</button>
+                <p class="feedback-area" id="feedback-quiz-4" aria-live="polite"></p>
+            </div>
+            <div class="quiz-item">
+                <p class="quiz-question">6. Is Sofia slim and pleasant in Scene 7?</p>
+                <label for="quiz-a-5">Your answer:</label>
+                <input type="text" id="quiz-a-5" aria-label="Answer to quiz question 6">
+                <button class="check-btn" data-type="quiz" data-index="5">Check</button>
+                <p class="feedback-area" id="feedback-quiz-5" aria-live="polite"></p>
+            </div>
+            <div class="quiz-item">
+                <p class="quiz-question">7. Are Leo and Sofia good-looking in Scene 10?</p>
+                <label for="quiz-a-6">Your answer:</label>
+                <input type="text" id="quiz-a-6" aria-label="Answer to quiz question 7">
+                <button class="check-btn" data-type="quiz" data-index="6">Check</button>
+                <p class="feedback-area" id="feedback-quiz-6" aria-live="polite"></p>
+            </div>
+            <div class="quiz-item">
+                <p class="quiz-question">8. Is their dog cute?</p>
+                <label for="quiz-a-7">Your answer:</label>
+                <input type="text" id="quiz-a-7" aria-label="Answer to quiz question 8">
+                <button class="check-btn" data-type="quiz" data-index="7">Check</button>
+                <p class="feedback-area" id="feedback-quiz-7" aria-live="polite"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content container">
+            <p>&copy; 2025 Leo & Sofia</p>
+            <button id="contrastToggle" title="Toggle High Contrast Mode">Accessibility</button>
+        </div>
+    </footer>
+
+    <script src="js/common.js" defer></script>
+    <script src="js/grammar.js" defer></script>
+</body>
+</html>
+

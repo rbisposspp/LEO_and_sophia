@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo & Sofia: Their Story</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self';">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/story.css">
+    <link rel="stylesheet" href="css/high-contrast.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="site-title">Leo & Sofia</a>
+            <nav class="main-nav">
+                <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="primaryNav" class="nav-links">
+                    <li><a href="index.html">Home (Vocabulary)</a></li>
+                    <li><a href="story.html" class="active">The Story</a></li>
+                    <li><a href="grammar.html">Grammar Practice</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="spark-intro story-intro" aria-labelledby="storyTitle">
+            <p class="eyebrow">Illuminate Zone</p>
+            <h2 id="storyTitle">Leo and Sofia's Friendship Journey</h2>
+            <p class="instructions">Navigate scene by scene, listen to the dialogue, and mark each scene when you understand it.</p>
+            <div class="lab-stats" aria-live="polite">
+                <span class="stat-pill">Story progress: <strong id="sceneProgressPercent">10%</strong></span>
+                <span class="stat-pill">Scenes learned: <strong id="learnedSceneCount">0</strong>/10</span>
+                <span class="stat-pill">Lab points: <strong data-progress-points>0</strong></span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+                <div id="sceneProgressBar" class="progress-fill"></div>
+            </div>
+        </section>
+
+        <div id="story-container">
+            <div class="story-scene" id="scene-1">
+                <img src="images/story_scene01_meeting.jpg" alt="7-year-old Leo with a friendly smile offering a crayon to a quiet 7-year-old Sofia.">
+                <div class="scene-content">
+                    <p>At age 7, a <strong>friendly</strong> Leo meets a <strong>quiet</strong> Sofia on the first day of school.</p>
+                    <div class="dialogue" role="group" aria-label="Scene 1 Dialogue">
+                        <span class="character-name">Leo:</span>
+                        <p class="character-line">"Hi. I'm Leo. You can use my blue crayon."</p>
+                        <button class="play-audio-btn" data-audio-src="audio/story_scene01_leo.mp3" aria-label="Play Leo's line">
+                            <span class="play-icon">▶</span><span class="pause-icon" hidden>❚❚</span> Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="story-scene" id="scene-2">
+                <img src="images/story_scene02_project.jpg" alt="12-year-old Leo being funny while a very serious Sofia points at their science project.">
+                <div class="scene-content">
+                    <p>At 12, Leo is being <strong>funny</strong>, but Sofia is very <strong>serious</strong> about their science project.</p>
+                     <div class="dialogue" role="group" aria-label="Scene 2 Dialogue">
+                        <span class="character-name">Sofia:</span>
+                        <p class="character-line">"Leo, stop. This is serious. We need to work."</p>
+                        <button class="play-audio-btn" data-audio-src="audio/story_scene02_sofia.mp3" aria-label="Play Sofia's line">
+                            <span class="play-icon">▶</span><span class="pause-icon" hidden>❚❚</span> Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="story-scene" id="scene-3">
+                <img src="images/story_scene03_testhelp.jpg" alt="16-year-old Sofia looking smart and kind as she helps Leo study.">
+                <div class="scene-content">
+                    <p>At 16, <strong>smart</strong> and <strong>kind</strong> Sofia helps a struggling Leo study.</p>
+                     <div class="dialogue" role="group" aria-label="Scene 3 Dialogue">
+                        <span class="character-name">Leo:</span>
+                        <p class="character-line">"Wow, Sofia. You are very smart. Thank you."</p>
+                        <button class="play-audio-btn" data-audio-src="audio/story_scene03_leo.mp3" aria-label="Play Leo's line">
+                            <span class="play-icon">▶</span><span class="pause-icon" hidden>❚❚</span> Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="story-scene" id="scene-4">
+                <img src="images/story_scene04_argument.jpg" alt="19-year-old Sofia looking unfriendly during an argument with a sad Leo.">
+                <div class="scene-content">
+                    <p>At 19, an argument makes Sofia look <strong>unfriendly</strong> for a moment.</p>
+                     <div class="dialogue" role="group" aria-label="Scene 4 Dialogue">
+                        <span class="character-name">Leo:</span>
+                        <p class="character-line">"Sofia... I am sorry. Please, don't be like this."</p>
+                        <button class="play-audio-btn" data-audio-src="audio/story_scene04_leo.mp3" aria-label="Play Leo's line">
+                            <span class="play-icon">▶</span><span class="pause-icon" hidden>❚❚</span> Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="story-scene" id="scene-5">
+                <img src="images/story_scene05_apology.jpg" alt="Sofia with a nice, forgiving expression as Leo apologizes.">
+                <div class="scene-content">
+                    <p>The next day, Sofia is <strong>nice</strong> and ready to talk.</p>
+                     <div class="dialogue" role="group" aria-label="Scene 5 Dialogue">
+                        <span class="character-name">Sofia:</span>
+                        <p class="character-line">"It's okay, Leo. You are my friend. Let's talk."</p>
+                        <button class="play-audio-btn" data-audio-src="audio/story_scene05_sofia.mp3" aria-label="Play Sofia's line">
+                            <span class="play-icon">▶</span><span class="pause-icon" hidden>❚❚</span> Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="story-scene" id="scene-6">
+                <img src="images/story_scene06_trip.jpg" alt="Young adults Leo and Sofia looking at a map during an interesting trip to a foreign market.">
+                <div class="scene-content">
+                    <p>At 25, the <strong>young</strong> adults take an <strong>interesting</strong> trip.</p>
+                     <div class="dialogue" role="group" aria-label="Scene 6 Dialogue">
+                        <span class="character-name">Leo:</span>
+                        <p class="character-line">"This place is so interesting! Where to next?"</p>
+                        <button class="play-audio-btn" data-audio-src="audio/story_scene06_leo.mp3" aria-label="Play Leo's line">
+                            <span class="play-icon">▶</span><span class="pause-icon" hidden>❚❚</span> Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="story-scene" id="scene-7">
+                <img src="images/story_scene07_newjob.jpg" alt="A slim and pleasant Sofia advises a nervous Leo about a new job.">
+                <div class="scene-content">
+                    <p>At 28, a <strong>slim</strong> and <strong>pleasant</strong> Sofia advises a nervous Leo.</p>
+                     <div class="dialogue" role="group" aria-label="Scene 7 Dialogue">
+                        <span class="character-name">Sofia:</span>
+                        <p class="character-line">"You are smart and kind. Just be you. You will be great."</p>
+                        <button class="play-audio-btn" data-audio-src="audio/story_scene07_sofia.mp3" aria-label="Play Sofia's line">
+                            <span class="play-icon">▶</span><span class="pause-icon" hidden>❚❚</span> Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="story-scene" id="scene-8">
+                <img src="images/story_scene08_celebration.jpg" alt="A handsome Leo and beautiful Sofia celebrating at a nice restaurant.">
+                <div class="scene-content">
+                    <p>Leo gets the job! He looks <strong>handsome</strong>, and Sofia looks <strong>beautiful</strong>.</p>
+                     <div class="dialogue" role="group" aria-label="Scene 8 Dialogue">
+                        <span class="character-name">Leo:</span>
+                        <p class="character-line">"To my best friend. Thank you, Sofia."</p>
+                        <button class="play-audio-btn" data-audio-src="audio/story_scene08_leo.mp3" aria-label="Play Leo's line">
+                            <span class="play-icon">▶</span><span class="pause-icon" hidden>❚❚</span> Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="story-scene" id="scene-9">
+                <img src="images/story_scene09_dogadoption.jpg" alt="Leo and Sofia smiling as they adopt a cute puppy from a shelter.">
+                <div class="scene-content">
+                    <p>At 32, they adopt a very <strong>cute</strong> dog.</p>
+                     <div class="dialogue" role="group" aria-label="Scene 9 Dialogue">
+                        <span class="character-name">Sofia:</span>
+                        <p class="character-line">"Oh, Leo! He is so cute! We have to take him."</p>
+                        <button class="play-audio-btn" data-audio-src="audio/story_scene09_sofia.mp3" aria-label="Play Sofia's line">
+                            <span class="play-icon">▶</span><span class="pause-icon" hidden>❚❚</span> Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="story-scene" id="scene-10">
+                <img src="images/story_scene10_stillfriends.jpg" alt="Good-looking, happy friends Leo and Sofia picnicking in a park at age 40.">
+                <div class="scene-content">
+                    <p>At 40, the <strong>good-looking</strong> friends are still <strong>happy</strong> together.</p>
+                     <div class="dialogue" role="group" aria-label="Scene 10 Dialogue">
+                        <span class="character-name">Leo:</span>
+                        <p class="character-line">"Forty years old. And you are still my best friend."</p>
+                        <button class="play-audio-btn" data-audio-src="audio/story_scene10_leo.mp3" aria-label="Play Leo's line">
+                            <span class="play-icon">▶</span><span class="pause-icon" hidden>❚❚</span> Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="story-nav-controls">
+            <button id="prevSceneBtn">Previous</button>
+            <span id="sceneIndicator"></span>
+            <button id="nextSceneBtn">Next</button>
+        </div>
+        <div class="story-action-row">
+            <button type="button" id="markSceneLearnedBtn" class="accent-btn">Mark Scene as Learned</button>
+            <p id="learnedFeedback" class="inline-feedback" aria-live="polite"></p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content container">
+            <p>&copy; 2025 Leo & Sofia</p>
+            <button id="contrastToggle" title="Toggle High Contrast Mode">Accessibility</button>
+        </div>
+    </footer>
+
+    <script src="js/common.js" defer></script>
+    <script src="js/story.js" defer></script>
+</body>
+</html>

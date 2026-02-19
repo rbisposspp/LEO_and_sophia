@@ -1,0 +1,45 @@
+leo_sofia_app/
+├── index.html
+├── story.html
+├── grammar.html
+├── about.html
+│
+├── css/
+│   ├── main.css
+│   ├── story.css
+│   ├── grammar.css
+│   └── high-contrast.css
+│
+├── js/
+│   ├── common.js
+│   ├── index.js
+│   ├── story.js
+│   └── grammar.js
+│
+├── images/
+│   ├── leo_young.jpg
+│   ├── leo_old.jpg
+│   ├── sofia_shy.jpg
+│   ├── sofia_talkative.jpg
+│   ├── story_scene01_meeting.jpg
+│   ├── story_scene02_project.jpg
+│   ├── story_scene03_testhelp.jpg
+│   ├── story_scene04_argument.jpg
+│   ├── story_scene05_apology.jpg
+│   ├── story_scene06_trip.jpg
+│   ├── story_scene07_newjob.jpg
+│   ├── story_scene08_celebration.jpg
+│   ├── story_scene09_dogadoption.jpg
+│   └── story_scene10_stillfriends.jpg
+│
+└── audio/
+    ├── story_scene01_leo.mp3
+    ├── story_scene02_sofia.mp3
+    ├── story_scene03_leo.mp3
+    ├── story_scene04_leo.mp3
+    ├── story_scene05_sofia.mp3
+    ├── story_scene06_leo.mp3
+    ├── story_scene07_sofia.mp3
+    ├── story_scene08_leo.mp3
+    ├── story_scene09_sofia.mp3
+    └── story_scene10_leo.mp3

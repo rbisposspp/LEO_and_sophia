@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo & Sofia: Vocabulary</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self';">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/high-contrast.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="site-title">Leo & Sofia</a>
+            <nav class="main-nav">
+                <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="primaryNav" class="nav-links">
+                    <li><a href="index.html" class="active">Home (Vocabulary)</a></li>
+                    <li><a href="story.html">The Story</a></li>
+                    <li><a href="grammar.html">Grammar Practice</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="spark-intro" aria-labelledby="vocabTitle">
+            <p class="eyebrow">ESL Spark Interactive Labs</p>
+            <h2 id="vocabTitle">Vocabulary: Understanding Differences</h2>
+            <p class="instructions">Click each card, compare the adjectives, and complete the quick check.</p>
+            <div class="lab-stats" aria-live="polite">
+                <span class="stat-pill">Cards explored: <strong id="cardsExploredCount">0</strong>/4</span>
+                <span class="stat-pill">Lab points: <strong data-progress-points>0</strong></span>
+                <span class="stat-pill">Daily streak: <strong data-progress-streak>0</strong></span>
+            </div>
+        </section>
+
+        <section class="vocabulary-section">
+            <h3>Leo: Young vs. Old</h3>
+            <div class="contrast-pair">
+                <div class="image-container" data-word="young" tabindex="0" role="button" aria-label="View Young Leo">
+                    <img src="images/leo_young.jpg" alt="A photorealistic image of a joyful, 10-year-old boy named Leo, laughing heartily.">
+                    <p class="caption">Leo is <strong>young</strong>.</p>
+                </div>
+                <div class="image-container" data-word="old" tabindex="0" role="button" aria-label="View Old Leo">
+                    <img src="images/leo_old.jpg" alt="A photorealistic image of the same man, Leo, now 85 and sitting thoughtfully in a chair.">
+                    <p class="caption">Leo is <strong>old</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="vocabulary-section">
+            <h3>Sofia: Shy vs. Talkative</h3>
+            <div class="contrast-pair">
+                <div class="image-container" data-word="shy" tabindex="0" role="button" aria-label="View Shy Sofia">
+                    <img src="images/sofia_shy.jpg" alt="A photorealistic image of a shy, 16-year-old girl named Sofia, looking down nervously at a party.">
+                    <p class="caption">Sofia is <strong>shy</strong>.</p>
+                </div>
+                <div class="image-container" data-word="talkative" tabindex="0" role="button" aria-label="View Talkative Sofia">
+                    <img src="images/sofia_talkative.jpg" alt="A photorealistic image of the same woman, Sofia, now 30 and talking animatedly at a cafe.">
+                    <p class="caption">Sofia is <strong>talkative</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="spark-card quick-check" id="vocabQuickCheck" aria-labelledby="quickCheckTitle">
+            <h3 id="quickCheckTitle">Quick Check</h3>
+            <p class="question-text">Which adjective describes Sofia at age 30?</p>
+            <div class="choice-row" role="group" aria-label="Quick check answer options">
+                <button type="button" class="choice-btn" data-choice="shy">Shy</button>
+                <button type="button" class="choice-btn" data-choice="talkative">Talkative</button>
+                <button type="button" class="choice-btn" data-choice="serious">Serious</button>
+                <button type="button" class="choice-btn" data-choice="old">Old</button>
+            </div>
+            <p id="vocabFeedback" class="inline-feedback" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content container">
+            <p>&copy; 2025 Leo & Sofia</p>
+            <button id="contrastToggle" title="Toggle High Contrast Mode">Accessibility</button>
+        </div>
+    </footer>
+
+    <script src="js/common.js" defer></script>
+    <script src="js/index.js" defer></script>
+</body>
+</html>

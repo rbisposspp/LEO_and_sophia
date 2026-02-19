@@ -1,0 +1,166 @@
+/* css/story.css - Styles for the interactive story page */
+
+#story-container {
+    padding: 1rem;
+    margin-top: 1.2rem;
+    overflow: hidden;
+    position: relative;
+    min-height: 430px;
+}
+
+.story-scene {
+    display: none;
+    align-items: center;
+    gap: 1.25rem;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.story-scene.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .story-scene {
+        transition: none;
+        transform: none;
+    }
+}
+
+.story-scene img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 12px 26px rgba(42, 62, 119, 0.16);
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.scene-content {
+    text-align: center;
+}
+
+.scene-content p {
+    font-size: 1.06rem;
+    color: #2e3b69;
+    margin-bottom: 0.45rem;
+}
+
+.dialogue {
+    margin-top: 0.9rem;
+    padding: 0.95rem;
+}
+
+.character-name {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #314071;
+}
+
+.character-line {
+    font-style: italic;
+    color: #495784;
+    margin-bottom: 0.9rem !important;
+}
+
+.play-audio-btn {
+    background: linear-gradient(135deg, var(--color-primary), #5a8cff);
+    color: white;
+    padding: 0.58rem 1.05rem;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.play-audio-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 16px rgba(63, 124, 255, 0.28);
+}
+
+.play-audio-btn.playing {
+    background: linear-gradient(135deg, var(--color-primary-dark), #375fb5);
+}
+
+#story-nav-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1.1rem;
+    padding: 0.85rem;
+}
+
+#sceneIndicator {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #304071;
+    background: rgba(63, 124, 255, 0.1);
+    border: 1px solid rgba(63, 124, 255, 0.2);
+    border-radius: 999px;
+    padding: 0.42rem 0.72rem;
+}
+
+#story-nav-controls button {
+    background: linear-gradient(135deg, var(--color-primary), #598aff);
+    color: white;
+    padding: 0.64rem 1.1rem;
+    border: none;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#story-nav-controls button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 16px rgba(63, 124, 255, 0.25);
+}
+
+#story-nav-controls button:disabled {
+    background: #c8d1eb;
+    cursor: not-allowed;
+    opacity: 0.9;
+    box-shadow: none;
+}
+
+.story-action-row {
+    margin-top: 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+#learnedFeedback {
+    color: #2d437d;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 860px) {
+    .story-scene {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .story-scene img {
+        max-width: 52%;
+    }
+
+    .scene-content,
+    .dialogue {
+        text-align: left;
+    }
+}

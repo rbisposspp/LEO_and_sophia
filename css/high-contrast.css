@@ -1,0 +1,97 @@
+/* css/high-contrast.css - Optional high-contrast theme */
+
+body.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+.high-contrast .site-header,
+.high-contrast .spark-intro,
+.high-contrast .spark-card,
+.high-contrast .vocabulary-section,
+.high-contrast #story-container,
+.high-contrast #story-nav-controls,
+.high-contrast .exercise-item,
+.high-contrast .quiz-item,
+.high-contrast .dialogue {
+    background-color: #1a1a1a;
+    border-color: #fff;
+}
+
+.high-contrast .site-title,
+.high-contrast .nav-links a.active,
+.high-contrast strong {
+    color: #00ffff; /* Cyan */
+}
+
+.high-contrast .nav-links a {
+    color: #fff;
+}
+
+.high-contrast .lab-stats .stat-pill,
+.high-contrast #sceneIndicator,
+.high-contrast .hint-chip,
+.high-contrast .word-bank,
+.high-contrast .drop-zone,
+.high-contrast .word-token,
+.high-contrast .builder-clear-btn {
+    background-color: #111;
+    border-color: #fff;
+    color: #fff;
+}
+
+.high-contrast .choice-btn,
+.high-contrast .accent-btn,
+.high-contrast .check-btn,
+.high-contrast #contrastToggle {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.high-contrast .choice-btn.is-correct,
+.high-contrast .feedback-correct {
+    background-color: #013a01;
+    color: #d6ffd6;
+    border-color: #8cff8c;
+}
+
+.high-contrast .choice-btn.is-wrong,
+.high-contrast .feedback-incorrect {
+    background-color: #3a0000;
+    color: #ffd9d9;
+    border-color: #ff8a8a;
+}
+
+.high-contrast .progress-track {
+    background-color: #333;
+}
+
+.high-contrast .hamburger,
+.high-contrast .hamburger::before,
+.high-contrast .hamburger::after {
+    background-color: #fff;
+}
+
+.high-contrast .jumbled-words {
+    background-color: #333;
+    color: #fff;
+}
+
+.high-contrast .credits,
+.high-contrast .instructions,
+.high-contrast .character-line,
+.high-contrast .question-text,
+.high-contrast .caption {
+    color: #ddd;
+}
+
+.high-contrast #story-nav-controls button:disabled {
+    background-color: #555;
+    color: #aaa;
+}
+
+.high-contrast .site-footer {
+    background-color: #111;
+    color: #fff;
+}

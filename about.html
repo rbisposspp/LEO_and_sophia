@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo & Sofia: About This App</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self';">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/high-contrast.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="site-title">Leo & Sofia</a>
+            <nav class="main-nav">
+                <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="primaryNav" class="nav-links">
+                    <li><a href="index.html">Home (Vocabulary)</a></li>
+                    <li><a href="story.html">The Story</a></li>
+                    <li><a href="grammar.html">Grammar Practice</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="spark-intro about-intro" aria-labelledby="aboutTitle">
+            <p class="eyebrow">Glow Up</p>
+            <h2 id="aboutTitle">About the Leo & Sofia Learning App</h2>
+            <p class="instructions">This lab was designed to keep practice simple, communicative, and motivating.</p>
+            <div class="lab-stats" aria-live="polite">
+                <span class="stat-pill">Lab points: <strong data-progress-points>0</strong></span>
+                <span class="stat-pill">Actions completed: <strong data-progress-actions>0</strong></span>
+                <span class="stat-pill">Daily streak: <strong data-progress-streak>0</strong></span>
+            </div>
+        </section>
+        
+        <p>This application is designed to help English as a Second Language (ESL) learners improve their vocabulary related to descriptions and personality, and practice basic English grammar in an engaging way through the journey of our characters, Leo and Sofia.</p>
+        
+        <p>We believe in learning through context and interaction. This app aims to provide a communicative approach to language acquisition.</p>
+        
+        <h3>How to Use This App:</h3>
+        <ul class="how-to-list">
+            <li><strong>Home (Vocabulary):</strong> Start here to get familiar with key adjectives by seeing visual contrasts.</li>
+            <li><strong>The Story:</strong> Follow Leo and Sofia's friendship through 10 interactive scenes with images and audio.</li>
+            <li><strong>Grammar Practice:</strong> Test your understanding with unscramble exercises and a quiz based on the story.</li>
+        </ul>
+        
+        <p>Navigate through the sections using the main menu at the top of each page.</p>
+        
+        <p class="credits"><em>Inspired by principles of Communicative Language Teaching and RODRIGO SIAS teaching experience.</em></p>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content container">
+            <p>&copy; 2025 Leo & Sofia</p>
+            <button id="contrastToggle" title="Toggle High Contrast Mode">Accessibility</button>
+        </div>
+    </footer>
+
+    <script src="js/common.js" defer></script>
+</body>
+</html>

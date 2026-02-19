@@ -1,0 +1,203 @@
+/* css/grammar.css - Styles for the interactive grammar page */
+
+section {
+    margin-top: 1.6rem;
+}
+
+.grammar-intro {
+    margin-bottom: 1.4rem;
+}
+
+.synonym-hints {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.85rem;
+}
+
+.hint-chip {
+    display: inline-flex;
+    border: 1px solid rgba(63, 124, 255, 0.25);
+    background: rgba(108, 199, 255, 0.16);
+    color: #2f4378;
+    border-radius: 999px;
+    padding: 0.32rem 0.62rem;
+    font-size: 0.83rem;
+    font-weight: 600;
+}
+
+.exercise-item,
+.quiz-item {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.jumbled-words,
+.quiz-question {
+    font-weight: 700;
+    margin-bottom: 0.72rem;
+    color: #2d3c6d;
+}
+
+.jumbled-words {
+    background: linear-gradient(135deg, rgba(182, 157, 255, 0.12), rgba(108, 199, 255, 0.14));
+    border: 1px solid rgba(63, 124, 255, 0.18);
+    padding: 0.68rem;
+    border-radius: 10px;
+    font-family: "Consolas", "Courier New", monospace;
+    color: #36406c;
+    font-size: 1rem;
+}
+
+.drag-builder {
+    margin-top: 0.65rem;
+    margin-bottom: 0.35rem;
+}
+
+.builder-label {
+    margin: 0 0 0.35rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #33406f;
+}
+
+.word-bank,
+.drop-zone {
+    min-height: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    align-items: flex-start;
+    padding: 0.6rem;
+    border-radius: 10px;
+}
+
+.word-bank {
+    border: 1px solid rgba(63, 124, 255, 0.22);
+    background: rgba(255, 255, 255, 0.86);
+}
+
+.drop-zone {
+    border: 2px dashed rgba(63, 124, 255, 0.34);
+    background: rgba(108, 199, 255, 0.1);
+    margin-top: 0.45rem;
+}
+
+.word-token {
+    border: 1px solid rgba(63, 124, 255, 0.32);
+    background: #fff;
+    color: #2e3c6c;
+    border-radius: 999px;
+    padding: 0.38rem 0.68rem;
+    font-size: 0.92rem;
+    font-weight: 700;
+    cursor: grab;
+    user-select: none;
+}
+
+.word-token:active {
+    cursor: grabbing;
+}
+
+.word-token.dragging {
+    opacity: 0.5;
+}
+
+.builder-clear-btn {
+    margin-top: 0.5rem;
+    border: 1px solid rgba(63, 124, 255, 0.28);
+    background: rgba(182, 157, 255, 0.16);
+    color: #304171;
+    border-radius: 999px;
+    padding: 0.28rem 0.72rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.builder-clear-btn:hover {
+    background: rgba(108, 199, 255, 0.22);
+}
+
+.exercise-item input[readonly] {
+    background: #f5f8ff;
+    border-style: dashed;
+}
+
+.exercise-item label,
+.quiz-item label {
+    display: block;
+    font-weight: 600;
+    margin-top: 0.68rem;
+    margin-bottom: 0.22rem;
+    color: #33406f;
+}
+
+.exercise-item input[type="text"],
+.quiz-item input[type="text"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid rgba(63, 124, 255, 0.24);
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exercise-item input[type="text"]:focus,
+.quiz-item input[type="text"]:focus {
+    border-color: rgba(63, 124, 255, 0.7);
+    box-shadow: 0 0 0 3px rgba(63, 124, 255, 0.15);
+    outline: none;
+}
+
+.check-btn {
+    background: linear-gradient(135deg, var(--color-primary), #5d8fff);
+    color: white;
+    padding: 0.56rem 1rem;
+    border: none;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 0.75rem;
+}
+
+.check-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 16px rgba(63, 124, 255, 0.24);
+}
+
+.feedback-area {
+    margin-top: 0.75rem;
+    font-weight: 700;
+    min-height: 1.2em;
+    padding: 0.65rem;
+    border-radius: 10px;
+    display: none;
+}
+
+.feedback-area.visible {
+    display: block;
+}
+
+.feedback-correct {
+    color: #166e45;
+    background-color: #dff4e7;
+    border: 1px solid #bce3cc;
+}
+
+.feedback-incorrect {
+    color: #8b2f34;
+    background-color: #ffe7ea;
+    border: 1px solid #f6c7cd;
+}
+
+@media (max-width: 640px) {
+    .exercise-item,
+    .quiz-item {
+        padding: 0.9rem;
+    }
+}
