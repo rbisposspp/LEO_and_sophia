@@ -1,41 +1,35 @@
-# LOOK LIKE: Leo & Sofia (Multi-Page ESL App)
+# Leo and Sophia
 
-Static ESL learning app with multiple pages, shared navigation, images, audio, and grammar exercises.  
-The project focuses on descriptive adjectives and basic `to be` question practice through a short story.
+## What it is
+Leo and Sophia is a multi-page ESL learning app that combines story-based input, audio support, vocabulary review, and grammar practice. The project uses a lightweight static structure so it can be opened quickly for live teaching.
 
-## Project Structure
-- `index.html`: vocabulary contrasts with interactive image cards.
-- `story.html`: 10-scene story with per-line audio playback controls.
-- `grammar.html`: unscramble + quiz activities with instant feedback.
-- `about.html`: app description and learning context.
-- `css/`: shared and page-specific styles (`main.css`, `story.css`, `grammar.css`, `high-contrast.css`).
-- `js/`: shared logic (`common.js`) and page scripts (`index.js`, `story.js`, `grammar.js`).
-- `images/`, `audio/`: media assets used by pages.
+## Who it is for
+This app is designed for ESL teachers working with beginner or lower-level learners in online lessons, 1-on-1 classes, or guided self-study. It is especially useful when a lesson needs story context, pronunciation support, and a few focused follow-up tasks in the same package.
 
-## Run Locally
-Serve this folder with a local static server (recommended because pages use CSP).
+## Main features
+- Multi-page flow with vocabulary, story, grammar, and about pages
+- Scene-by-scene audio playback for guided reading and listening
+- Interactive vocabulary cards and grammar checks with feedback
+- Shared navigation across desktop and mobile layouts
+- High-contrast accessibility mode
+- Local media assets with no backend requirement
 
-```powershell
-python -m http.server 5500
+## Teaching value
+The project helps teachers move from input to practice in a single lesson flow. A teacher can introduce language through visuals, reinforce meaning with the story, and then use grammar tasks to check comprehension and sentence control.
+
+## Tech stack
+- HTML
+- CSS
+- Vanilla JavaScript
+
+## How to run
+Start a local static server from the repository root:
+
+```bash
+python3 -m http.server 5500
 ```
 
-Open: `http://localhost:5500`
-
-## Features
-- Responsive navigation menu for desktop/mobile.
-- High-contrast accessibility mode (footer button).
-- Keyboard support for interactive vocabulary cards (`Enter` and `Space`).
-- Story audio playback with stable button state during rapid interactions.
-- Grammar validation tuned for both simple and multi-keyword answers.
-
-## Manual Test Checklist
-1. Open all pages (`index`, `story`, `grammar`, `about`) and verify top navigation links.
-2. Toggle **Accessibility** mode and confirm visual changes across pages.
-3. On `story.html`, test play/pause, fast repeated clicks, and scene navigation.
-4. On `grammar.html`, verify that partial answers are rejected when questions require multiple keywords.
-5. Check browser console for runtime errors.
+Then open `http://localhost:5500`.
 
 ## Notes
-- No build step or framework is required.
-- No automated test suite is configured yet.
-- Keep assets local (`images/`, `audio/`) and avoid external dependencies unless necessary.
+The project is fully static and keeps all media local. No build pipeline is required.
